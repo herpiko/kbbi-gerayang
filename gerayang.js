@@ -12,9 +12,9 @@ var charset = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 var max = process.argv[3];
 var length = process.argv[2];
 if (!max || !length) {
-  console.log("butuh dua parameter tambahan. jumlah karakter dan maksimal percobaan. misal :");
-  console.log("3 karakter permutasi dan 1000 kali percobaan.");
-  console.log("$ node gerayang.js 3 1000.");
+  console.log("\nbutuh dua parameter tambahan. jumlah karakter dan maksimal percobaan.");
+  console.log("misal : 3 karakter permutasi dan 1000 kali percobaan.");
+  console.log("\n$ node gerayang.js 3 1000");
   console.log("\nselesai.\n");
   process.exit();
 }
