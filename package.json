@@ -20,9 +20,10 @@
     "url": "https://github.com/herpiko/kbbi-gerayang/issues"
   },
   "dependencies": {
+    "bson": "^0.2.16",
+    "cheerio": "~0.18.0",
     "keypress": "~0.2.1",
     "mongoose": "~3.8.21",
-    "request": "~2.51.0",
-    "cheerio": "~0.18.0"
+    "request": "~2.51.0"
   }
 }
