@@ -5,7 +5,7 @@ var request = require('hyperquest');
 var uri = 'http://badanbahasa.kemdikbud.go.id/kbbi/index.php';
 
 function Get(input){
-  this.dump = 'word-of-' + input + '.txt';
+  this.dump = "lema/"+input + '.txt';
   this.init(input);
 }
 
