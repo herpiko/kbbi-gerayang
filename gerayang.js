@@ -25,6 +25,7 @@ var kataDasar = new mongoose.Schema({
   kata : String,
   arti : String,
   versi : String,
+  awalan : String,
 }, {
   collection: 'valid'
 });
@@ -96,6 +97,7 @@ Get.prototype.parse2 = function (r2, input) {
       kata.arti = $(this).html();
       console.log(kata.arti);
       kata.kata = $('#KATA').val();
+      kata.awalan = awalan;
       current = $('#KATA').val();
       kata.save(function(err){if(err)console.log(err)});
     });
