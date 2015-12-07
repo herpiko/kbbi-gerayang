@@ -90,6 +90,9 @@ Get.prototype.parse2 = function (r2, input) {
   var self = this;
   var data = '';
   r2.on('data', function(buf){ data += buf; });
+  r2.on('error', function(err){
+    console.log(err);
+  });
   r2.on('end', function(){
     var kata = new lema();
     var $ = cheerio.load(data);

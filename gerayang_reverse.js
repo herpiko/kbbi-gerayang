@@ -10,7 +10,7 @@ var fs = require("fs");
 var async = require("async");
 var uristring = "mongodb://localhost/kbbi_gerayang";
 var current = "";
-keypress(process.stdin); 
+keypress(process.stdin);
 process.stdin.setRawMode(true);
 var awalan = process.argv[2];
 process.stdin.on('keypress', function(ch,key){
@@ -62,7 +62,7 @@ mongoose.connect(uristring, function(err,res){
         console.log("DONE");
         process.exit();
       })
-    })  
+    })
   }
 });
 
@@ -78,6 +78,7 @@ var parse = function(lema, str, callback) {
       current = joinned;
       var rev = {};
       rev.kata = joinned;
+      rev.awalan = awalan;
       if (lema[lema.length-1] == ")") {
         rev.lema = lema.split("(")[0];
         rev.versi = lema.split("(")[1].split(")")[0];
